@@ -1,5 +1,5 @@
-NAME=myminishell
-SRC=minishell.c
+NAME=mynotsominishell
+SRC=mynotsominishell.c
 LIBPATH=../lib
 LIB=my
 RM=rm -f

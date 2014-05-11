@@ -18,12 +18,6 @@ int main()
       n = read(0, buffer, BUF_SZ-1);
       buffer[n-1]='\0';
       vect = my_str2vect(buffer);
-      for(n=0; vect[n]!='\0'; n++)
-	{
-	  my_str(vect[n]);
-	  my_char('\n');
-	}
-
       if(!my_strcmp(vect[0],"cd"))
 	chdir(vect[1]);
       else if(!my_strcmp(vect[0],"exit"))
